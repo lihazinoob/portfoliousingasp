@@ -64,7 +64,7 @@
     <div class="header">
             <p>Academics</p>
         </div>
-   <asp:GridView ID="academicsList" runat="server" CssClass="gridview-container" AutoGenerateColumns="False">
+   <asp:GridView ID="academicsList" runat="server" CssClass="gridview-container" AutoGenerateColumns="False" OnRowCommand="academicsList_OnRowCommand">
                 <Columns>
                     <asp:BoundField DataField="degreename" HeaderText="Name of the degree" />
                     <asp:BoundField DataField="inst_name" HeaderText="Institution Name" />
@@ -74,8 +74,8 @@
 
                         
                         <ItemTemplate>
-                            <asp:Button ID="btnUpdate" runat="server" Text="Update" CssClass="update-button" />
-                            <asp:LinkButton ID="DeleteLinkButton" runat="server" CssClass="delete-button">Delete</asp:LinkButton>
+                            <asp:LinkButton ID="UpdateLinkButton" runat="server" CssClass="update-button" CommandName="upd" CommandArgument='<%# Eval("degreename") %>'>Update</asp:LinkButton>
+                            <asp:LinkButton ID="DeleteLinkButton" runat="server" CssClass="delete-button" CommandName="del" CommandArgument='<%# Eval("degreename") %>'>Delete</asp:LinkButton>
 
                         </ItemTemplate>
                     

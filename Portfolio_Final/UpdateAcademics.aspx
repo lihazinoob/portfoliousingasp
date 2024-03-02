@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Academics.aspx.cs" Inherits="Portfolio_Final.Academics" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateAcademics.aspx.cs" Inherits="Portfolio_Final.UpdateAcademics" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<style>
+    <style>
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -76,18 +76,8 @@ body {
         <asp:TextBox ID="textbox3" runat="server" CssClass="textbox"></asp:TextBox>
     </div>
     <div class="submit-btn-container">
-        <asp:Button ID="submitButton" runat="server" Text="Submit" CssClass="submit-btn" OnClick="submitButton_Click" />
+        <asp:Button ID="submitButton" runat="server" Text="Update" CssClass="submit-btn"/>
     </div>
     </div>
-
-    
-
-    
-
-
-
-
-
-
 
 </asp:Content>

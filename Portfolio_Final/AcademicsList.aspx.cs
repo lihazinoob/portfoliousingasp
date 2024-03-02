@@ -33,5 +33,17 @@ namespace Portfolio_Final
                 
             }
         }
+
+        protected void academicsList_OnRowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if(e.CommandName == "upd")
+            {
+                Response.Redirect("~/UpdateAcademics.aspx?degreename="+e.CommandArgument.ToString()+"");
+            }
+            else if(e.CommandName =="del")
+            {
+                Response.Write("<script>alert('Delete Button clicked')</script>");
+            }
+        }
     }
 }

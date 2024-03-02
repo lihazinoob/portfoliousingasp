@@ -73,6 +73,7 @@
     <Content Include="Images\Aboutpic.jpg" />
     <Content Include="Images\profilepic.png" />
     <Content Include="MainPage.aspx" />
+    <Content Include="UpdateAcademics.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAcademics.aspx.cs">
+      <DependentUpon>UpdateAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateAcademics.aspx.designer.cs">
+      <DependentUpon>UpdateAcademics.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
