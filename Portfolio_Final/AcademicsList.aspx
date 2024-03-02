@@ -69,6 +69,17 @@
                     <asp:BoundField DataField="degreename" HeaderText="Name of the degree" />
                     <asp:BoundField DataField="inst_name" HeaderText="Institution Name" />
                     <asp:BoundField DataField="desciption" HeaderText="Description" />
+
+                    <asp:TemplateField HeaderText="Actions">
+
+                        
+                        <ItemTemplate>
+                            <asp:Button ID="btnUpdate" runat="server" Text="Update" CssClass="update-button" />
+                            <asp:LinkButton ID="DeleteLinkButton" runat="server" CssClass="delete-button">Delete</asp:LinkButton>
+
+                        </ItemTemplate>
+                    
+                    </asp:TemplateField>
                     
                 </Columns>
             </asp:GridView>
