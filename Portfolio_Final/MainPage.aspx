@@ -19,7 +19,7 @@
             <a href="#" class = "logo">Portfolio.</a>
     
 
-            <nav class="navbar">
+            <nav class="navbar" runat="server">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -35,7 +35,7 @@
 
 
 
-        </header>
+      
 
   <!--home section design-->
 
