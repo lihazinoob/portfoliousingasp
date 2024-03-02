@@ -56,10 +56,13 @@ body {
     background-color: #45a049;
 }
 </style>
-</head>
-<body>
 
-<div class="container">
+
+    
+
+
+
+    <div class="container">
     <div class="textbox">
         <label for="textbox1">Textbox 1:</label><br>
         <asp:TextBox ID="textbox1" runat="server" CssClass="textbox"></asp:TextBox>
@@ -75,10 +78,11 @@ body {
     <div class="submit-btn-container">
         <asp:Button ID="submitButton" runat="server" Text="Submit" CssClass="submit-btn" OnClick="submitButton_Click" />
     </div>
-</div>
+    </div>
 
-</body>
+    
 
+    
 
 
 

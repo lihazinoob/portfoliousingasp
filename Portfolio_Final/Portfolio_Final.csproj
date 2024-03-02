@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Academics.aspx" />
+    <Content Include="AcademicsList.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="Images\Aboutpic.jpg" />
     <Content Include="Images\profilepic.png" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="Academics.aspx.designer.cs">
       <DependentUpon>Academics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicsList.aspx.cs">
+      <DependentUpon>AcademicsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcademicsList.aspx.designer.cs">
+      <DependentUpon>AcademicsList.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
