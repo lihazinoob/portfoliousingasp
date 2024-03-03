@@ -69,12 +69,15 @@
   <ItemGroup>
     <Content Include="Academics.aspx" />
     <Content Include="AcademicsList.aspx" />
+    <Content Include="adminlogin.aspx" />
+    <Content Include="CSS\adminloginstyle.css" />
     <Content Include="CSS\photography.css" />
     <Content Include="CSS\projectstyle.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Images\Aboutpic.jpg" />
     <Content Include="Images\picture1.jpg" />
     <Content Include="Images\profilepic.png" />
+    <Content Include="JS\adminloginjs.js" />
     <Content Include="JS\photographyjavascript.js" />
     <Content Include="JS\script.js" />
     <Content Include="MainPage.aspx" />
@@ -95,6 +98,13 @@
     </Compile>
     <Compile Include="AcademicsList.aspx.designer.cs">
       <DependentUpon>AcademicsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
