@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Academics.aspx" />
     <Content Include="AcademicsList.aspx" />
+    <Content Include="CSS\projectstyle.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Images\Aboutpic.jpg" />
     <Content Include="Images\profilepic.png" />

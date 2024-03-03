@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
     <link rel="stylesheet" href="CSS/style.css" type ="text/css">
+    <link rel="stylesheet" href ="CSS/projectstyle.css"  type ="text/css"/>
     <script src="script.js"></script>
     
 </head>
@@ -132,7 +133,35 @@
         </div>
 
     </section>
+        <!--Projects sections design-->
 
+        <section class="portfoilo" id="portfolio">
+    <h2 class="heading">My <span>Projects</span></h2>
+            
+
+    <div class="portfolio-container">
+        <asp:Repeater ID="repeaterprojects" runat="server">
+            <ItemTemplate>
+            <div class="portfolio-box">
+                
+                <h3>
+                    <asp:Label ID="projectnamelabel" runat="server" Text="Label"></asp:Label>
+                </h3>
+                <p>
+                    <asp:Label ID="projectdescriptionlabel" runat="server" Text="Label"></asp:Label>
+                </p>
+                <button> <a href="https://github.com/lihazinoob">GitHUB LINK</a><i class='bx bxl-github'></i></button>
+            </div>
+                </ItemTemplate>
+        </asp:Repeater>
+      
+
+
+
+    </div>
+    
+  </section>
+        
     </form>
 </body>
 </html>
