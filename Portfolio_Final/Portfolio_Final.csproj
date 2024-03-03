@@ -69,10 +69,14 @@
   <ItemGroup>
     <Content Include="Academics.aspx" />
     <Content Include="AcademicsList.aspx" />
+    <Content Include="CSS\photography.css" />
     <Content Include="CSS\projectstyle.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Images\Aboutpic.jpg" />
+    <Content Include="Images\picture1.jpg" />
     <Content Include="Images\profilepic.png" />
+    <Content Include="JS\photographyjavascript.js" />
+    <Content Include="JS\script.js" />
     <Content Include="MainPage.aspx" />
     <Content Include="UpdateAcademics.aspx" />
     <Content Include="Web.config" />
