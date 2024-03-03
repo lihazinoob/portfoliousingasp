@@ -16,15 +16,24 @@
       <form id="form2" runat="server">
         <h2>Admin Login</h2>
         <div class="input-group">
-          <input type="text" required>
-          <label for="">Username</label>
+
+          
+          
+          
+            <input  id="useradmin" type="text" runat="server"/>
+            <label for="">Username</label>
         </div>
         <div class="input-group">
-          <input type="password" required>
-          <label for="">Password</label>
+          
+          
+            <input id="pass" type="password" runat="server"/>
+            <label for="">Password</label>
         </div>
-        
-        <button type="submit">Login</button>
+          
+          <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="button" OnClick="Button1_Click1" />
+          
+          
+            
         
       </form>
     </div>

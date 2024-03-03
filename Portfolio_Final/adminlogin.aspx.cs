@@ -13,5 +13,18 @@ namespace Portfolio_Final
         {
 
         }
+
+        
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            string username = useradmin.ToString();
+            string password = pass.ToString();
+
+
+
+
+            Response.Redirect("~/Academics.aspx");
+        }
     }
 }
