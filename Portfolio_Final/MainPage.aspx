@@ -8,11 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naveed Lihazi</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
     <link rel="stylesheet" href="CSS/style.css" type ="text/css">
-    <link rel="stylesheet" href ="CSS/projectstyle.css"  type ="text/css"/>
+   
     <link rel ="stylesheet"  href="CSS/photography.css" type="text/css"/>
-    <script src="JS/script.js" type="text/javascript"></script>
+    
     
 
     
@@ -166,74 +170,61 @@
     
   </section>
 
-        <!--Photography sections design-->
-
-        <section class="picture" id="picture">
-    <h2 class="heading">My <span>Photography</span></h2>
-
-    <div class="carousel">
-      <!-- list item -->
-      <div class="list">
-        <div class="item">
-          <img src="Images/picture1.jpg">
-          <div class="content">
-            <div class="author">24.4859° N, 91.7765° E</div>
-            <div class="title">Brontide.</div>
+        <!--Testimonial Section-->
+        <section class="testimonial">
+  <div class="testimonial-container">
+    <h2 class="heading"> Valuable <span>Testimonial</span></h2>
+    
+    
+    
+    
+          <div class="testimonial-slide swiper-slide">
+            <h3>Naveed Lihazi</h3>
+            <p class="designation">Lecturer,CSE 
+              <h3 class="inst">
+                Khulna Universilty of Engineering and Technology.
+              </h3>
+            
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <h4 class="rating">Rating:</h4>
+            <div class="marks">5/10</div>
           </div>
-        </div>
-        <div class="item">
-          <img src="Images/Aboutpic.jpg">
-          <div class="content">
-            <div class="author">21.8182° N, 90.1398° E</div>
-            <div class="title">Evigheden.</div>
+          <div class="testimonial-slide swiper-slide">
+            <h3>Naveed Lihazi</h3>
+            <p class="designation">Lecturer,CSE 
+              <h3 class="inst">
+                Khulna Universilty of Engineering and Technology.
+              </h3>
+            
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <h4 class="rating">Rating:</h4>
+            <div class="marks">5/10</div>
           </div>
-        </div>
-        <div class="item">
-          <img src="Images/picture1.jpg">
-          <div class="content">
-            <div class="author">22.4944° N, 92.2212° E</div>
-            <div class="title">Evanescent.</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="Images/picture1.jpg">
-          <div class="content">
-            <div class="author">25.0667° N, 91.4072° E</div>
-            <div class="title">Psithurism.</div>
-          </div>
-        </div>
-      </div>
-      <!-- list thumnail -->
-      <div class="thumbnail">
-        <div class="item">
-          <img src="Images/picture1.jpg">
-        </div>
-        <div class="item">
-          <img src="Images/Aboutpic.jpg">
-        </div>
-        <div class="item">
-          <img src="Images/picture1.jpg">
-        </div>
-        <div class="item">
-          <img src="Images/picture1.jpg">
-        </div>
-      </div>
-      <!-- next prev -->
 
-      <div class="arrows">
-        <button id="prev"> < </button>
-        <button id="next"> > </button>
-      </div>
-      <!-- time running -->
-      <div class="time"></div>
-    </div>
+        
 
-
-
-
+  </div>
 
   </section>
-        <script src="JS/photographyjavascript.js" type="text/javascript"></script>
+
+
+
+
+        <!--Photography sections design-->
+
+        
+        
+        <script src="JS/script.js"></script>
     </form>
     
 </body>
