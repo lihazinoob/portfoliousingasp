@@ -54,5 +54,17 @@ namespace Portfolio_Final
             }
 
         }
+
+        protected void submitButton_Click(object sender, EventArgs e)
+        {
+            SqlConnection con1 = new SqlConnection(strcon);
+            con1.Open();
+            SqlCommand cmd = new SqlCommand("UPDATE academics_qualification SET [degreename]=@deg,[inst_name]=@inst,[desciption]=@des WHERE[degreename] = @deg",con1);
+            cmd.Parameters.AddWithValue("@deg", textbox1.Text.Trim());
+            cmd.Parameters.AddWithValue("@inst", textbox2.Text.Trim());
+            cmd.Parameters.AddWithValue("@des", textbox3.Text.Trim());
+            con1.Close();
+            Response.Redirect("~/AcademicsList.aspx");
+        }
     }
 }

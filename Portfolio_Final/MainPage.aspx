@@ -31,15 +31,15 @@
             <nav class="navbar" runat="server">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                  <a href="#academics">Academics</a>
+                  <a href="#portfolio">Projects</a>
+                  <a href="#Testimonial">Testimonial</a>
+                  <a href="#contact">Rating</a>
+                <div class='bx bx-moon' id="darkMode-icon">
 
-
+                </div>      
             </nav>
-            <div class='bx bx-moon' id ="darkMode-icon">
-
-            </div>
+            
         </header>
 
 
@@ -58,10 +58,10 @@
       </p>
       
       <div class="social-media">
-        <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
-        <a href="#"><i class='bx bxl-instagram' ></i></a>
-        <a href="#"><i class='bx bxl-linkedin' ></i></a>
-        
+        <a href="https://www.facebook.com/navid.lihazi.9"><i class='bx bxl-facebook-circle' ></i></a>
+        <a href="https://www.instagram.com/lihazinaveed"><i class='bx bxl-instagram' ></i></a>
+    
+        <a href="https://github.com/lihazinoob"><i class='bx bxl-github'></i></a>
       </div>
 
     <a href="#" class="btn">Download CV</a>  
@@ -171,7 +171,7 @@
   </section>
 
         <!--Testimonial Section-->
-        <section class="testimonial">
+        <section class="testimonial" id="Testimonial">
     <div class="testimonial-container">
     <h2 class="heading"> Valuable <span>Testimonial</span></h2>
     
@@ -277,7 +277,8 @@
       </p>
     </div>
     <div class="adminlogin">
-      <input type="submit" value="Admin Login" class="btn">
+        <asp:Button ID="adminloginbutton" runat="server" Text="Admin Login" CssClass="btn" OnClick="admin_login"/>
+     
     </div>
 
   </footer>

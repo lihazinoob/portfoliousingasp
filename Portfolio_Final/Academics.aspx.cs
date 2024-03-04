@@ -32,13 +32,19 @@ namespace Portfolio_Final
                 command.Parameters.AddWithValue("@desc", textbox3.Text.Trim());
                 command.ExecuteNonQuery();
                 con.Close();
+                Response.Redirect("~/MainPage.aspx");
             }
             catch (Exception)
             {
                 Response.Write("An Error Occured");
-               
+                throw;
             }
             
+        }
+
+        protected void addcoursebutton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/AcademicsList.aspx");
         }
     }
 }

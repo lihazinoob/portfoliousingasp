@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Academics.aspx.cs" Inherits="Portfolio_Final.Academics" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="CSS/random.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <style>
@@ -55,6 +56,10 @@ body {
 .submit-btn:hover {
     background-color: #45a049;
 }
+.des{
+    margin-top:10rem;
+    text-align: center;
+}
 </style>
 
 
@@ -78,6 +83,12 @@ body {
     <div class="submit-btn-container">
         <asp:Button ID="submitButton" runat="server" Text="Submit" CssClass="submit-btn" OnClick="submitButton_Click" />
     </div>
+    </div>
+
+     <h2 class="des">Want to SEE the courses?</h2>
+    <div>
+
+     <asp:Button ID="addcoursebutton" runat="server" Text="CLICK HERE" CssClass="update" OnClick="addcoursebutton_Click" />
     </div>
 
     

@@ -24,7 +24,7 @@ namespace Portfolio_Final
 
 
 
-            Response.Redirect("~/Academics.aspx");
+            Response.Redirect("~/adminportfolio.aspx");
         }
     }
 }

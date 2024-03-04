@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AcademicsList.aspx.cs" Inherits="Portfolio_Final.AcademicsList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="CSS/random.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -57,12 +58,17 @@
     .delete-button:hover {
         background-color: #c62828;
     }
+    .des{
+        margin-top:10rem;
+        text-align: center;
+    }
+    
 
     
 
 </style>
     <div class="header">
-            <p>Academics</p>
+            <p>Academics List</p>
         </div>
    <asp:GridView ID="academicsList" runat="server" CssClass="gridview-container" AutoGenerateColumns="False" OnRowCommand="academicsList_OnRowCommand">
                 <Columns>
@@ -83,9 +89,17 @@
                     
                 </Columns>
             </asp:GridView>
+        
+        <h2 class="des">Want to add a course?</h2>
+        <div>
+            <asp:Button ID="addcoursebutton" runat="server" Text="CLICK HERE" CssClass="update" OnClick="addcoursebutton_Click" />
+        </div>
 
+        <div>
+            <asp:Button ID="logout" runat="server" Text="Log Out" CssClass="update" OnClick="logout_click"/>
+        </div>
     
-
+        
 
 
 

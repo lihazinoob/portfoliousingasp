@@ -11,17 +11,17 @@ namespace Portfolio_Final
 {
 
 
-    public partial class MainPage
+    public partial class adminportfolio
     {
 
         /// <summary>
-        /// mainpage control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm mainpage;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// repeateracademics control.
@@ -33,6 +33,15 @@ namespace Portfolio_Final
         protected global::System.Web.UI.WebControls.Repeater repeateracademics;
 
         /// <summary>
+        /// updateacademics control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updateacademics;
+
+        /// <summary>
         /// repeaterprojects control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace Portfolio_Final
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater repeaterprojects;
+
+        /// <summary>
+        /// updateprojects control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updateprojects;
 
         /// <summary>
         /// repeatertestimonial control.
@@ -51,60 +69,6 @@ namespace Portfolio_Final
         protected global::System.Web.UI.WebControls.Repeater repeatertestimonial;
 
         /// <summary>
-        /// namerating control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox namerating;
-
-        /// <summary>
-        /// desrating control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox desrating;
-
-        /// <summary>
-        /// TextBoxinst control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxinst;
-
-        /// <summary>
-        /// TextBoxrating control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxrating;
-
-        /// <summary>
-        /// TextBoxcomment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxcomment;
-
-        /// <summary>
-        /// submitbutton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitbutton;
-
-        /// <summary>
         /// adminloginbutton control.
         /// </summary>
         /// <remarks>
@@ -112,5 +76,14 @@ namespace Portfolio_Final
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button adminloginbutton;
+
+        /// <summary>
+        /// updatecontact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updatecontact;
     }
 }
