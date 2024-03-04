@@ -73,6 +73,7 @@
     <Content Include="CSS\adminloginstyle.css" />
     <Content Include="CSS\photography.css" />
     <Content Include="CSS\projectstyle.css" />
+    <Content Include="CSS\ratingstyle.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Images\Aboutpic.jpg" />
     <Content Include="Images\picture1.jpg" />

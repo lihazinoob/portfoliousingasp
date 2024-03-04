@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naveed Lihazi</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link href="CSS/ratingstyle.css" rel="stylesheet" />
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -172,44 +172,54 @@
 
         <!--Testimonial Section-->
         <section class="testimonial">
-  <div class="testimonial-container">
+    <div class="testimonial-container">
     <h2 class="heading"> Valuable <span>Testimonial</span></h2>
     
     
     
     
-          <div class="testimonial-slide swiper-slide">
-            <h3>Naveed Lihazi</h3>
-            <p class="designation">Lecturer,CSE 
-              <h3 class="inst">
-                Khulna Universilty of Engineering and Technology.
-              </h3>
+          
+              <asp:Repeater ID="repeatertestimonial" runat="server">
+                  <ItemTemplate>
+                      <div class="testimonial-slide swiper-slide">
+                          <h3>
+                              <asp:Label ID="testname" runat="server" Text='<%# Eval("full_name") %>'></asp:Label> 
+
+                          </h3>
+                          <p class="designation">
+                              <asp:Label ID="testdes" runat="server" Text='<%# Eval("designation") %>'></asp:Label>
+                            <h3 class="inst">
+                                <asp:Label ID="testins" runat="server" Text='<%# Eval("institution") %>'></asp:Label>
+                            </h3>
+                          </p>
+                           <p>
+                               <asp:Label ID="testcomment" runat="server" Text='<%# Eval("comment") %>'></asp:Label>
+                           </p>
+
+                          <h4 class="rating">
+                              Rating: 
+
+                          </h4>
+                            <div class="marks">
+                                <asp:Label ID="testrate" runat="server" Text='<%# Eval("rate") %>'></asp:Label> /10
+
+                            </div>
+
+                          </div>
+                        
+
+                  </ItemTemplate>
+
+              </asp:Repeater>
+
+
+            </div>
             
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <h4 class="rating">Rating:</h4>
-            <div class="marks">5/10</div>
-          </div>
-          <div class="testimonial-slide swiper-slide">
-            <h3>Naveed Lihazi</h3>
-            <p class="designation">Lecturer,CSE 
-              <h3 class="inst">
-                Khulna Universilty of Engineering and Technology.
-              </h3>
             
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <h4 class="rating">Rating:</h4>
-            <div class="marks">5/10</div>
-          </div>
+            
+            
+            
+          
 
         
 
@@ -218,9 +228,59 @@
   </section>
 
 
+        <!--Contact Section-->
+
+       <section class="contact" id="contact">
+        <h2 class="heading">Rate My <span>Portfolio</span></h2>
+           <div class="container">
+            <div class="form-group">
+                <label for="txtName">Name:</label>
+                <asp:TextBox ID="namerating" runat="server" CssClass="input"></asp:TextBox>
+                
+            </div>
+            <div class="form-group">
+                <label for="txtEmail">Designation:</label>
+                <asp:TextBox ID="desrating" runat="server" CssClass="input"></asp:TextBox>
+                
+            </div>
+            <div class="form-group">
+                <label for="txtPhone">Institution</label>
+                <asp:TextBox ID="TextBoxinst" runat="server" CssClass="input" ></asp:TextBox>
+                
+            </div>
+            <div class="form-group">
+                <label for="txtAddress">Rating:</label>
+                <asp:TextBox ID="TextBoxrating" runat="server" CssClass="input"></asp:TextBox>
+            </div>
+            <div class="form-group">
+                <label for="txtCity">Comment</label>
+                <asp:TextBox ID="TextBoxcomment" runat="server" CssClass="input"></asp:TextBox>
+            </div>
+            <div class="submit-btn-wrapper">
+                <asp:Button ID="submitbutton" runat="server" Text="Submit" CssClass="submit"  OnClick="submitbutton_Click" />
+            </div>
+        </div>
+  </section>
 
 
-        <!--Photography sections design-->
+        
+        <!--footer section design-->
+
+        <footer class="footer">
+    <div class="footer-text">
+      <p>Contact me:<i class='bx bxs-phone'></i>
+        01747919102
+      </p>
+      <p>
+        Email:<i class='bx bxs-envelope' ></i>
+        naveedlihazi@gmail.com
+      </p>
+    </div>
+    <div class="adminlogin">
+      <input type="submit" value="Admin Login" class="btn">
+    </div>
+
+  </footer>
 
         
         
